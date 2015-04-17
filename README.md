@@ -14,20 +14,20 @@ How to use it
 -------------
 You can publish a text message to one of the events. eg
 
-'''js
+```javascript
 var rabbit_lib = require('rabbit_lib');
 rabbit_lib.publish(
     'hello world',  // the content of msg.
     'new_motion_arrival'  // the name of event.
 );
-'''
+```
 
 Also you can register an event, and do something when it occurs.
 - First of all, you need define a callback.
 - Then, you should specify which event you want to register.
 - Finally, you also need tell rabbit lib who you are, i.e. the name of register.
 
-'''js
+```javascript
 handleMsg = function(msg){
     console.log(msg); // do what you want when event occurs.
 };
@@ -37,7 +37,7 @@ rabbit_lib.register(
     'process_rawdata', // the name of register.
     'new_motion_arrival' // the name of event.
 );
-'''
+```
 
 Tips
 ----
