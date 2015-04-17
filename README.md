@@ -41,4 +41,4 @@ rabbit_lib.register(
 
 Tips
 ----
-You could only choose the event from above definitions, but the name of register you could define by yourself.
+You would only choose the event from above definitions, but the name of register you could define by yourself.
