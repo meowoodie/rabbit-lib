@@ -1,0 +1,14 @@
+{
+    "name": "rabbit-lib",
+    "description": "It's used to handle the message queues for senz.",
+    "version": "0.0.1",
+    "private": true,
+    "main": "lib/index.js",
+    "dependencies": {
+        "wascally"     : "latest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/meowoodie/rabbit-lib"
+    }
+}
