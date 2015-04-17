@@ -14,7 +14,7 @@ How to use it
 -------------
 You can publish a text message to one of the events. eg
 
-'''javascript
+'''js
 var rabbit_lib = require('rabbit_lib');
 rabbit_lib.publish(
     'hello world',  // the content of msg.
@@ -27,7 +27,7 @@ Also you can register an event, and do something when it occurs.
 - Then, you should specify which event you want to register.
 - Finally, you also need tell rabbit lib who you are, i.e. the name of register.
 
-'''javascript
+'''js
 handleMsg = function(msg){
     console.log(msg); // do what you want when event occurs.
 };
