@@ -4,6 +4,9 @@ var subcriber = require('../lib/subscriber.js');
 handleMsg = function(msg){
     console.log(msg);
 };
-
-publisher.publishMessage('hello world', 'new_motion_arrival');
+msg = {
+    'objectId': 2014111553,
+    'projectId': 'test_project'
+};
+publisher.publishMessage(msg, 'new_motion_arrival');
 subcriber.registerEvent(handleMsg, 'process_rawdata', 'new_motion_arrival');

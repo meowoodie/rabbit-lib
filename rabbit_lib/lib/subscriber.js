@@ -3,9 +3,9 @@ var configuration = require('./configuration.js');
 
 function handleMessage(callback){
     //setting up the handler for the subscriber
-    rabbit.handle('test.message', function(msg) {
+    rabbit.handle('senz.message', function(msg) {
         try {
-            console.log('Received Msg from event.');
+            console.log('* Received Msg from event.');
             callback(msg.body);
             msg.ack();
         }
@@ -13,7 +13,8 @@ function handleMessage(callback){
             msg.nack();
         }
     });
-    console.log('Waiting for message from publisher.');
+    console.log('------ Receiving ------');
+    console.log('* Waiting for Msg from publisher.');
 };
 
 exports.registerEvent = function(callback, consumer_name, event){

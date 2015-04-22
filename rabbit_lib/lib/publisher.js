@@ -2,9 +2,10 @@ var rabbit = require('wascally');
 var configuration = require( './configuration.js' )
 
 publishMsg = function(msg, event) {
-    console.log('The chosen event is ' + event + '\nThe content of Msg is ' + msg + '\nSending Msg...\n');
+    console.log('------ Sending ------');
+    console.log('* The chosen event is ' + event + '\n* The content of Msg is ' + msg + '\n* Sending Msg...\n');
     rabbit.publish(event, {
-        type: 'test.message',
+        type: 'senz.message',
         body: msg,
         routingKey: ''
     });

@@ -1,7 +1,7 @@
 var publisher  = require('./publisher.js');
 var subscriber = require('./subscriber.js');
-
-console.log('Here is rabbit lib!\nby MeoWoodie! at Fri, April, 17, 2015.');
+console.log('RABBIT LIB PROCESSING\n===================');
+console.log('Here is rabbit lib!\nby MeoWoodie! at Fri, April, 17, 2015.\n');
 
 exports.publish = function(msg, event){
     publisher.publishMessage(msg, event);
