@@ -12,12 +12,16 @@ The following are events' definition.
 
 How to use it
 -------------
-You can publish a text message to one of the events. eg
+You can publish a message in any type to one of the events. eg
 
 ```javascript
 var rabbit_lib = require('rabbit_lib');
+msg = {
+    'objectId': 2014111553,
+    'projectId': 'test_project'
+};
 rabbit_lib.publish(
-    'hello world',  // the content of msg.
+    msg,  // the content of msg.
     'new_motion_arrival'  // the name of event.
 );
 ```
