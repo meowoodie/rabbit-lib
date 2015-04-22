@@ -3,6 +3,35 @@ rabbit Lib
 The rabbit Lib is used for ***publishing a senz event message*** or ***registering a senz event***.
 The server is on Ali Yun 4 which run a rabbitmq service.
 
+Installation
+----------
+You can use the rabbit lib like other nodejs module.
+First you should add dependency of wascally in your package.json file. eg
+
+```json
+{
+    "name": "XXX-Project",
+    "description": "It's a test project.",
+    "version": "0.0.1",
+    "private": true,
+    "dependencies": {
+        "wascally"    : "latest"
+    }
+}
+```
+
+And then, you need put rabbit lib into the file folder named 'node_modules'.
+Finally, you can invoke the method of rabbit lib in your code.
+
+- WARNING
+It is a private project. Only used for Senz project. so it doesn't support that 
+
+```shell
+npm install rabbit_lib
+```
+
+Maybe I would add this feature later. :)
+
 Senz Event
 ----------
 The following are events' definition.
